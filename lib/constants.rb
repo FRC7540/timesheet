@@ -1,18 +1,18 @@
 module Constants
-  TIMEZONE = 'Eastern Time (US & Canada)'
-  DAY_END = 1
-  BUILD_MEETINGS = 2
-  PRE_MEETINGS = 1
-  PRE_HOURS = 25
-  DEFAULT_LOGIN = "signup@team900.org"
-  TEAM_NAME = 'Zebracorns'
-  TEAM_NUMBER = '900'
-  SCHOOL_NAME_REPLACEMENT = 'School'
-  GENDERS = ['Male', 'Female', 'Other']
-  FRESHMAN_HOURS = 6
-  SOPHOMORE_HOURS = 8
-  JUNIOR_HOURS = 10
-  SENIOR_HOURS = 10
-  LEADERSHIP_HOURS = 15
-  FLEX_HOURS = 15
+  TIMEZONE = ENV['TS_TIMEZONE'] || 'Eastern Time (US & Canada)'
+  DAY_END = ENV['TS_DAY_END'].to_i || 1
+  BUILD_MEETINGS = ENV['TS_BUILD_MEETINGS'].to_i || 2
+  PRE_MEETINGS = ENV['TS_PRE_MEETINS'].to_i || 1
+  PRE_HOURS = ENV['TS_PRE_HOURS'].to_i || 25
+  DEFAULT_LOGIN = ENV['TS_DEFAULT_LOGIN'] || "signup@team900.org"
+  TEAM_NAME = ENV['TS_TEAM_NAME'] || 'Zebracorns'
+  TEAM_NUMBER = ENV['TS_TEAM_NUMBER'] || '900'
+  SCHOOL_NAME_REPLACEMENT = ENV['TS_SCHOOL_NAME_REPLACEMENT'] || 'School'
+  GENDERS = ENV.has_key?("TS_GENDERS") ? ENV['TS_GENDERS'].to_s.split(',') : ['Male', 'Female', 'Other']
+  FRESHMAN_HOURS = ENV['TS_FRESHMAN_HOURS'].to_i || 6
+  SOPHOMORE_HOURS = ENV['TS_SOPHOMORE_HOURS'].to_i || 8
+  JUNIOR_HOURS = ENV['TS_JUNIOR_HOURS'].to_i || 10
+  SENIOR_HOURS = ENV['TS_SENIOR_HOURS'].to_i || 10
+  LEADERSHIP_HOURS = ENV['TS_LEADERSHIP_HOURS'].to_i || 15
+  FLEX_HOURS = ENV['TS_FLEX_HOURS'].to_i || 15
 end

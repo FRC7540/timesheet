@@ -3,3 +3,7 @@ db/*.sqlite3
 *.dump
 config/database.yml
 ._*
+
+.idea/*
+
+postgres_data/*
