@@ -8,8 +8,8 @@ services:
       - TS_DATABASE_USER=${DB_USER}
       - TS_DATABASE_PASSWORD=${DB_PASSWORD}
       - TS_DEFAULT_LOGIN=signup@team900.org
-      - TS_TEAM_NAME=Zebracorns
-      - TS_TEAM_NUMBER=900
+      - TS_TEAM_NAME=Timberwolves
+      - TS_TEAM_NUMBER=7540
       - TS_PORT=3000
     build: .
     ports:
