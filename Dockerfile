@@ -17,6 +17,6 @@ COPY . /app
 
 RUN bundle exec rails assets:precompile
 
-run chmod +x ./start.sh
+RUN chmod +x ./start.sh
 
 CMD ./start.sh
