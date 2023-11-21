@@ -8,7 +8,7 @@ services:
       - TS_DATABASE_PASSWORD=${DB_PASSWORD}
     build: .
     ports:
-      - "3000:3000"
+      - "80:${TS_PORT}"
     env_file:
       - .env
     depends_on:
