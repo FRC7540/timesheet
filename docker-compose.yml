@@ -3,17 +3,14 @@ services:
   timesheet:
     image: rzblue/timesheet
     environment:
-      - TS_DATABASE_HOST=postgres
       - TS_DATABASE=${DB_NAME}
       - TS_DATABASE_USER=${DB_USER}
       - TS_DATABASE_PASSWORD=${DB_PASSWORD}
-      - TS_DEFAULT_LOGIN=signup@team900.org
-      - TS_TEAM_NAME=Timberwolves
-      - TS_TEAM_NUMBER=7540
-      - TS_PORT=3000
     build: .
     ports:
-      - "3000:3000"
+      - "80:${TS_PORT}"
+    env_file:
+      - .env
     depends_on:
       - postgres
   postgres:
