@@ -51,6 +51,8 @@ gem 'ransack' #filtering/pagination
 
  gem 'jquery-datatables-rails', '~> 3.4.0'
 
+ #linter
+ gem 'rubocop', require: false
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
