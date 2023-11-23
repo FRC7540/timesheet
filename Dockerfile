@@ -16,7 +16,7 @@ RUN bundle install
 COPY . /app
 
 RUN bundle exec rails assets:precompile
-
+RUN rubocop -a; exit 0
 RUN chmod +x ./start.sh
 
 ENTRYPOINT ./start.sh
