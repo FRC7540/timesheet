@@ -96,7 +96,7 @@ GEM
     less-rails-bootstrap (3.3.5.0)
       less-rails (>= 2.6, <= 2.8)
     libv8 (3.16.14.19)
-    local_time (2.0.0)
+    local_time (2.1.0)
     loofah (2.1.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
