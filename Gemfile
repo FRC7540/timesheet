@@ -42,7 +42,7 @@ gem 'momentjs-rails', '>= 2.9.0'
 #gem 'bootstrap3-datetimepicker-rails', '~> 4.17.37'
 gem 'simple_form'
 gem 'cocoon'
-gem 'jquery-ui-rails', '~> 4.2.1' # Datetime jquery picker
+gem 'jquery-ui-rails', '~> 6.0.1' # Datetime jquery picker
 gem 'jquery-timepicker-addon-rails'
 gem 'kaminari'
 gem 'ransack' #filtering/pagination
